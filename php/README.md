@@ -3,34 +3,17 @@ phpunit setup
 
 This is a simple bootstrap project for PHP with phpunit
 
-For PHP 7.2 or above just run:
+For PHP 8.0 just run:
 
 ```
-./composer install
+make start
+make deps
 
 ```
 
 To run the tests just run:
 
 ```
-phpunit --bootstrap vendor/autoload.php tests --filter testNotFailing
+make test
 ```
-You need PHP 7.2 or above.
-
-
-If you have legacy version of php please change composer.json file
-and include the version that is compatible with you version of PHP
-
-
-If you change the phpunit version do not forget to run:
-
-```
-./composer update --with-dependencies
-
-```
-
-# run from docker
-
-```
-'./test.sh'
-```
+You need Docker and Docker compose.
