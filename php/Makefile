@@ -18,4 +18,4 @@ deps:
 
 .PHONY: test
 test:
-	docker compose exec app ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests
+	docker compose exec app composer test
