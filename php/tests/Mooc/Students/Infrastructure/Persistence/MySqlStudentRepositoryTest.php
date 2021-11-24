@@ -11,8 +11,9 @@ class MySqlStudentRepositoryTest extends TestCase
     /**
      * @test
      */
-    public function it_should_save_a_student(): void
+    public function itShouldSaveAStudent(): void
     {
+        $this->expectNotToPerformAssertions();
         $student = new Student(
             'custom-id',
             'custom-name'
@@ -25,7 +26,7 @@ class MySqlStudentRepositoryTest extends TestCase
     /**
      * @test
      */
-    public function it_should_search_a_existing_student(): void
+    public function itShouldSearchAExistingStudent(): void
     {
         $repository = new InMemoryStudentRepository();
         $customId = 'random-id';
@@ -43,7 +44,7 @@ class MySqlStudentRepositoryTest extends TestCase
     /**
      * @test
      */
-    public function it_should_search_a_non_existing_student(): void
+    public function itShouldSearchANonExistingStudent(): void
     {
         $repository = new InMemoryStudentRepository();
         $customId = 'random-id';

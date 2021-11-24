@@ -10,7 +10,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function it_should_return_itself_number(): void
+    public function itShouldReturnItselfNumber(): void
     {
         self::assertEquals(1, (new FizzBuzz())(1));
         self::assertEquals(2, (new FizzBuzz())(2));
@@ -19,7 +19,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function it_should_return_fizz_if_divisible_by_3(): void
+    public function itShouldReturnFizzIfDivisibleBy3(): void
     {
         self::assertEquals('Fizz', (new FizzBuzz())(3));
     }
@@ -27,7 +27,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function it_should_return_fizz_if_divisible_by_5(): void
+    public function itShouldReturnFizzIfDivisibleBy5(): void
     {
         self::assertEquals('Buzz', (new FizzBuzz())(5));
     }
@@ -35,7 +35,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function it_should_return_fizzbuzz_if_divisible_by_3_and_5(): void
+    public function itShouldReturnFizzbuzzIfDivisibleBy3And5(): void
     {
         self::assertEquals('FizzBuzz', (new FizzBuzz())(15));
     }
